@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz sur les Furets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <!-- Page d'accueil -->
+      <div id="intro">
+        <h1>Bienvenue au Quiz sur les Furets !</h1>
+        <p>Testez vos connaissances sur ces adorables animaux !</p>
+        <button id="start-btn" onclick="startQuiz()">Démarrer le quiz</button>
+      </div>
+
+      <!-- Image du furet -->
+      <img
+        src="https://www.renovereve.fr/wp-content/uploads/2023/12/animals-1144845_1280-1024x681.jpg"
+        alt="Furet"
+        id="ferret-image"
+      />
+
+      <!-- Affichage des questions -->
+      <div id="question-container" style="display: none">
+        <h2 id="question-text"></h2>
+        <div id="answers-container"></div>
+        <button id="validate-btn" onclick="checkAnswer()">
+          Valider la réponse
+        </button>
+      </div>
+
+      <!-- Résultats -->
+      <div id="result-container" style="display: none">
+        <h2>Votre score final : <span id="score"></span>/5</h2>
+        <p id="result-feedback"></p>
+        <button onclick="restartQuiz()">Recommencer</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
